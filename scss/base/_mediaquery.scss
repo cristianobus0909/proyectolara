@@ -1,0 +1,56 @@
+@media screen and (max-width: 560px) {
+    .principal .hero{
+        text-align: center;
+        width: 100%;
+        min-width: 480px;
+        height: 70vh;
+        background-image: url("../img/top-view-colourful-summer-lettering.jpg") ;
+        background-position-x: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 490px) {
+    .principal .hero{
+        text-align: center;
+        width: 100%;
+        min-width: 490px;
+        height: 50vh;
+        background-image: url("../img/top-view-colourful-summer-lettering.jpg") ;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 460px) {
+    .destacadosContenedor .tarjetaProd{
+        border: 1px solid rgb(134, 134, 134);
+        width: 296px;
+        height: 390px;
+        margin: 1px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    
+    }
+    .productosDestacados .destacadosContenedor .tarjetaProd img{
+        width: 292.5px;
+        height: 292.5px;
+        margin-bottom: 30px;
+    }
+}
