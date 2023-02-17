@@ -1,0 +1,38 @@
+/**---------FOOTER--------**/
+
+.footer{
+    grid-area: pie;
+    max-width: 3000px;
+    min-width: 480px;
+    background-color: rgb(240, 156, 96);
+    @include flex(flex, space-around, center, column);
+    .footerMain{
+        ul{
+            margin-top: 15px;
+            @include flexcenter(flex, space-between, center);
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: white;
+                    margin: 20px;
+                }
+            }
+        }
+    }
+    .containPie{
+        div{
+            margin: 10px;
+        }
+        .redes{
+            a{
+                img{
+                    margin: 10px;
+                    width: 30px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+//*--VARIABLES--*//
+$color-principal:  rgb(240, 156, 96);
+$color-secundario: rgb(230, 97, 101);
+$color-terciario: rgb(134, 134, 134);
+
+//*--LISTAS--*//
+$colores:
+rgb(240, 156, 96),
+rgb(230, 97, 101),
+rgb(134, 134, 134), 
+white,
+dimgrey,
+rgb(255, 255, 255),
+black,
+;
+
+//*--EXTEND--*//
+%hidecard{
+    width: 100%;
+    height: 40%;
+    border: 1px;
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+}
+
+%boton{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    background-color: dimgray;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+%hoverhero{
+    background-color: white; 
+    color: dimgray;
+}
+%hoverbotton{
+    background-color: #E66165;
+    color: rgb(255, 255, 255);
+}
+//*--MIXIN--*//
+
+@mixin flexdir($flex, $direction, $align){
+    display: $flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin flexcenter($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin flex($flex, $justify, $align, $direction){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin background($position, $size, $repeat){
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+}

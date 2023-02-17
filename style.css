@@ -75,7 +75,7 @@ body{
 
 .principal .hero h1{
     
-    font-weight: 900;
+    font-weight: 200px;
     color: white;
     margin-bottom:  20px;
     font-size: 50px; 
@@ -153,7 +153,7 @@ body{
 
 
 .categoriasProductos  div a:hover{
-    background-color: #E66165;
+    background-color: rgb(230, 97, 101);
     color: rgb(255, 255, 255);
 
 }
@@ -216,7 +216,7 @@ body{
     text-align: center
 
 }
-.containEdades > .ctdrEdades1, .ctdrEdades2{
+.containEdades .ctgaEdades{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -226,7 +226,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.containEdades .ctdrEdades1 div{
+.containEdades .ctgaEdades div{
     border: 1px solid rgb(134, 134, 134);
     width: 400px;
     height: 250px;
@@ -235,79 +235,79 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end
+    justify-content: flex-end;
 
     
 }
 
-.ctdrEdades1 .ctga1{
+.ctgaEdades .ctga1{
     background-image: url("../img/beba4.jfif");
     background-position-y: 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.ctdrEdades1 .ctga1 div{
+.ctgaEdades .ctga1 div{
     height: 40%;
     border: 1px;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75))
 }
 
-.ctdrEdades1 .ctga2{
+.ctgaEdades .ctga2{
     background-image: url("../img/loockjardinerobebe.jpg");
     background-position-y: 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.ctdrEdades1 .ctga2 div{
+.ctgaEdades .ctga2 div{
     height: 40%;
     border: 1px;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75))
 }
-.ctdrEdades1 .ctga3{
+.ctgaEdades .ctga3{
     background-image: url("../img/lookmininena.jpg");
     background-position-y: 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.ctdrEdades1 .ctga3 div{
+.ctgaEdades .ctga3 div{
     height: 40%;
     border: 1px;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75))
 }
-.ctdrEdades1 .ctga4{
+.ctgaEdades .ctga4{
     background-image: url("../img/front-view-smiling-cute-kid-in-white-t-shirt-holding-skateboard-on-the-blue-floor.jpg");
     background-position-y: 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.containEdades .ctdrEdades1 .ctga4 div{
+.containEdades .ctgaEdades .ctga4 div{
     height: 40%;
     border: 1px;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75))
 }
-.ctdrEdades1 .ctga5{
+.ctgaEdades .ctga5{
     background-image: url("../img/loockjuniornena.jpg");
     background-position-y: 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.containEdades .ctdrEdades1 .ctga5 div{
+.containEdades .ctgaEdades.ctga5 div{
     height: 40%;
     border: 1px;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75))
 }
-.ctdrEdades1 .ctga6{
+.ctgaEdades .ctga6{
     background-image: url("../img/loockjuniorvaron2.jpg");
     background-position-y: 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.containEdades .ctdrEdades1 .ctga6 div{
+.containEdades .ctgaEdades .ctga6 div{
     height: 40%;
     border: none;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75))
 }
-.containEdades .ctdrEdades2 div{
+.containEdades .ctgaEdades div{
     border: 1px solid rgb(134, 134, 134);
     width: 400px;
     height: 250px;
@@ -319,7 +319,7 @@ body{
     justify-content: flex-end
     
 }
-.containEdades .ctdrEdades1 div a{
+.containEdades .ctgaEdades div a{
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -328,31 +328,17 @@ body{
     border-radius: 50px;
 
 }
-.containEdades .ctdrEdades2 div a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background-color: dimgrey;
-    padding: 10px 25px;
-    border-radius: 50px;
 
-}
-.containEdades .ctdrEdades1 div a:hover{
+.containEdades .ctgaEdades div a:hover{
     background-color: #E66165;
     color: rgb(255, 255, 255);
 }
-.containEdades .ctdrEdades2 div a:hover{
-    background-color: #E66165;
-    color: rgb(255, 255, 255);
-}
-.containEdades .ctdrEdades1 div h3{
+
+.containEdades .ctgaEdades div h3{
     margin-bottom: 20px;
 
 }
-.containEdades .ctdrEdades2 div h3{
-    margin-bottom: 20px;
 
-}
 .containEdades div img{
     width: 200px;
     height: 200px;
@@ -377,7 +363,7 @@ body{
     justify-content: space-between;
     
 }
-.footer .containPie div img{
+.footer .containPie  img{
     margin: 10px;
     width: 30px;
     height: auto;
@@ -564,7 +550,7 @@ body{
 
 }
 .somos h3{
-    display: inline-block;
+    font-weight: 100px;
 }
 
 .ahora div img{
