@@ -1,3 +1,4 @@
 wireframe/
 *.txt
 node_modules/
+.vscode/
