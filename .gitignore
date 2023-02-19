@@ -2,3 +2,4 @@ wireframe/
 *.txt
 node_modules/
 .vscode/
+.tmp.driveupload/
