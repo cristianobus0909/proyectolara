@@ -404,38 +404,94 @@
 /**-------CONTACTO--------**/
 .contactoForm{
     width: 100%;
+    min-width: 350px;
     height: 100%;
     padding: 20px;
-    @include flex(flex, flex-start, center, column);
+    margin: o auto;
+    @include flex(flex, center, center, column);
     flex-wrap: wrap;
     h2{
         margin-top: 10px;
         padding: 20px;
         font-weight: bold;
     }
-    form{
+    .form{
+        width: 100%;
+        max-width: 90vh;
+        min-width: 350px;
+        margin: auto;
+        background-color: #f000007e;
+        color: white;
+        margin: auto;
+        padding: 4.5em 4.5em;
+        box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
         .containForm{
             width: 100%;
-            background-color: #f000007e;
-            color: white;
-            font-weight: bold;
-            text-align: center;
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            .datos1{
-                display: flex;
+            justify-content: center;
+            margin-top: 1em;
+            font-weight: bold;
+            text-align: center;
+            .datos{
+                width: 100%;
+                text-align: left;
                 margin-bottom: 10px;
                 flex-wrap: wrap;
-            }
-            .datos2{
-                display: flex;
-                margin-bottom: 20px;
-                flex-wrap: wrap;
-                div{
-                    margin: 0px 54px 20px 20px;
+                .nombre,
+                .mail{
+
+                    input {
+                        width: 100%;
+                        padding: .6em .3em;
+                        outline: none;
+                        margin-bottom: 10px;
+                    }
+                    label {
+                        cursor: pointer;
+                    }
                 }
+                .asunto,
+                .ubicacion{
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    select{
+                        width: 100%;
+                    }
+                    
+                }
+                .consulta{
+                    h4{
+                        padding: 10px;
+                    }
+                    text-align: center;
+                    textarea{
+                        outline: none;
+                        
+                    }
+                    input{
+                        height: auto;
+                        resize: vertical;
+                        border: none;
+                        background-color: #2CAFA2;
+                        color: white;
+                        font-family: 'Fredoka One', cursive;
+                        border-radius: 20px;
+                        padding: 10px 10px;
+                        box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 5%);
+                        transition: 0.5s;
+                        &:hover{
+                            color: #EF8F49;
+                            background-color: white;
+                            box-shadow: none;
+                            transition: 0.5s;
+                        
+                        }
+                    }
+                }
+
             }
+
         }
     }
 }
