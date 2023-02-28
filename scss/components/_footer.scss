@@ -24,20 +24,6 @@
     .containPie{
         div{
             margin: 10px;
-            .botonlog{
-                background-color: #2CAFA2;
-                color: white;
-                font-family: 'Fredoka One', cursive;
-                border-radius: 20px;
-                padding: 10px 10px;
-                box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 5%);
-                transition: 0.5s;
-                &:hover{
-                    color: #EF8F49;
-                    background-color: white;
-                    box-shadow: none;
-                    transition: 0.5s;
-            }
         }
         .redes{
             a{
