@@ -134,6 +134,13 @@
                     text-align: center;
                     div{
                         @extend %hidecard;
+                        &:hover{
+                            width: 100%;
+                            height: 50%;
+                            border: 1px;
+                            transition: 600ms;
+                            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+                        }
                         a{
                             @extend %boton;
                             &:hover{
@@ -158,6 +165,13 @@
                     @include flex(flex, flex-end, center, column);
                     div{
                         @extend %hidecard;
+                        &:hover{
+                            width: 100%;
+                            height: 50%;
+                            border: 1px;
+                            transition: 600ms;
+                            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+                        }
                         a{
                             @extend %boton;
                             &:hover{
@@ -182,6 +196,13 @@
                     @include flex(flex, flex-end, center, column);
                     div{
                         @extend %hidecard;
+                        &:hover{
+                            width: 100%;
+                            height: 50%;
+                            border: 1px;
+                            transition: 600ms;
+                            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));                            
+                        }
                         a{
                             @extend %boton;
                             &:hover{
@@ -206,6 +227,13 @@
                     @include flex(flex, flex-end, center, column);
                     div{
                         @extend %hidecard;
+                        &:hover{
+                            width: 100%;
+                            height: 50%;
+                            border: 1px;
+                            transition: 600ms;
+                            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+                        }
                         a{
                             @extend %boton;
                             &:hover{
@@ -230,6 +258,13 @@
                     @include flex(flex, flex-end, center, column);
                     div{
                         @extend %hidecard;
+                        &:hover{
+                            width: 100%;
+                            height: 50%;
+                            border: 1px;
+                            transition: 600ms;
+                            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+                        }
                         a{
                             @extend %boton;
                             &:hover{
@@ -254,6 +289,13 @@
                     @include flex(flex, flex-end, center, column);
                     div{
                         @extend %hidecard;
+                        &:hover{
+                            width: 100%;
+                            height: 50%;
+                            border: 1px;
+                            transition: 600ms;
+                            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+                        }
                         a{
                             @extend %boton;
                             &:hover{
@@ -525,9 +567,7 @@
                         }
                     }
                 }
-
             }
-
         }
     }
 }
@@ -551,26 +591,32 @@
         color: #2CAFA2;
         font-weight: 700;
         text-align: center;
-        font-size: 60px;
+        font-size: 70px;
         padding: 20px;
+        cursor: default;
     }
     .planesFin{
         width: 100%;
         min-height: 400px;
         padding: 20px;
+        display: grid;
+        grid-row: 1fr ;
+        grid-column: repeat (4, 1fr) ;
+        row-gap: 15px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        
+    
         .finCard{
+            
             width: 220px;
             height: 300px;
             min-width: 250px;
             background-color: white;
             text-align: center;
             color: dimgrey;
-            border: solid 2px #2CAFA2;
+            border: solid 1px #2CAFA2;
             border-radius: 15px 0 15px 0;
             box-shadow:  0 5px 10px -5px rgb(0, 0, 0 / 30%);
             padding: 10px;
@@ -578,6 +624,9 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            transition: all 400ms ease;
+            cursor: default;
+            }
             img{
                 width: 150px;
                 padding: 10px;
@@ -591,6 +640,9 @@
                     color: rgb(230, 97, 101);
                 }
             }
+            .finCard:hover{
+                transform: translateY(-3%);
+                box-shadow:  0 10px 15px -10px rgb(0, 0, 0 / 30%);
         }
     }
 }
