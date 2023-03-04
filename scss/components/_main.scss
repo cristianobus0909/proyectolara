@@ -1,10 +1,14 @@
 /**-----INDEX-----**/
 .principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .hero{
         text-align: center;
         width: 100%;
         min-width: 480px;
-        height: 80vh;
+        height: 85vh;
         background-image: url("../img/top-view-colourful-summer-lettering.jpg") ;
         @include background(center, cover, no-repeat);
         background-attachment: fixed;
@@ -33,6 +37,7 @@
         border-bottom: 20px;
         flex-wrap: wrap;
         min-width: 250px;
+        max-width: 1250px;
         width: 100%;
         .categoria1,
         .categoria2,
@@ -60,10 +65,16 @@
                         @extend %hoverbotton;
                     }
                 }
+                p{
+                    min-width: 250px;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
             }
         }
     }
     .productosDestacados{
+        width: 100vw;
         text-align: center;
         @include flex(flex, center, center, column);
         flex-wrap: wrap;
@@ -75,13 +86,13 @@
             text-align: center;
         }
         .destacadosContenedor{
-            @include flexcenter(flex, center, center);
+            @include flexcenter(flex, space-between, center);
             flex-wrap: wrap;
             .tarjetaProd{
                 border: 1px solid rgb(134, 134, 134);
                 width: 227px;
                 height: 300px;
-                margin: 1px;
+                margin: 20px;
                 text-align: center;
                 @include flex(flex, start, center, column);
                 img{
@@ -101,6 +112,7 @@
         }
     }
     .categoriaEdades{
+        width: 100vw;
         margin: 20px;
         .tituloCtgra{
             text-align: center;
@@ -118,6 +130,7 @@
             flex-wrap: wrap;
             justify-content: center;
             .ctgaEdades{
+                max-width: 1250px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
