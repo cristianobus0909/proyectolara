@@ -787,7 +787,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center; }
   .productosDestacados .destacadosContenedor .tarjetaProd img {
     width: 292.5px;
