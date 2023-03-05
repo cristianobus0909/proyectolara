@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@700&family=Fredoka+One&family=Poppins:wght@200&display=swap");
-.principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div {
+.principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div, .main .categoriaGenero .generoGirl div:hover, .main .categoriaGenero .generoBoys div:hover {
   width: 100%;
   height: 40%;
   border: 1px;
@@ -9,7 +9,7 @@
 .principal .hero div a, .principal .categoriasProductos .categoria1 div a,
 .principal .categoriasProductos .categoria2 div a,
 .principal .categoriasProductos .categoria3 div a,
-.principal .categoriasProductos .categoria4 div a, .principal .productosDestacados .destacadosContenedor .tarjetaProd div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div a, .main .categoriaGenero .generoGirl a, .main .categoriaGenero .generoBoys a, .main .boysContenedor .cardBoys a, .main .girlsContenedor .cardGirls a {
+.principal .categoriasProductos .categoria4 div a, .principal .productosDestacados .destacadosContenedor .tarjetaProd div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div a, .main .categoriaGenero .generoGirl div a, .main .categoriaGenero .generoBoys div a, .main .boysContenedor .cardBoys .botonP a, .main .girlsContenedor .cardGirls .botonP a {
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -24,7 +24,7 @@
 .principal .categoriasProductos .categoria1 div a:hover,
 .principal .categoriasProductos .categoria2 div a:hover,
 .principal .categoriasProductos .categoria3 div a:hover,
-.principal .categoriasProductos .categoria4 div a:hover, .principal .productosDestacados .destacadosContenedor .tarjetaProd div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div a:hover, .main .categoriaGenero .generoGirl a:hover, .main .categoriaGenero .generoBoys a:hover, .main .boysContenedor .cardBoys a:hover, .main .girlsContenedor .cardGirls a:hover {
+.principal .categoriasProductos .categoria4 div a:hover, .principal .productosDestacados .destacadosContenedor .tarjetaProd div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div a:hover, .main .categoriaGenero .generoGirl div a:hover, .main .categoriaGenero .generoBoys div a:hover, .main .boysContenedor .cardBoys .botonP a:hover, .main .girlsContenedor .cardGirls .botonP a:hover {
   background-color: #E66165;
   color: white; }
 
@@ -338,60 +338,92 @@ body {
 .main {
   grid-area: principal;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
   .main .categoriaGenero {
+    width: 100%;
+    max-width: 3000px;
     display: flex;
     justify-content: space-around; }
     .main .categoriaGenero .generoGirl {
       background-image: url(../img/pretty-girl-with-long-hair-hugging-inflatable-swimming-circle.jpg);
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       flex-direction: column;
       width: 50%;
-      height: 250px;
+      min-height: 50vh;
       flex-wrap: wrap; }
-      .main .categoriaGenero .generoGirl h2 {
-        margin: 5px;
-        padding: 5px; }
+      .main .categoriaGenero .generoGirl div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+        border: 1px;
+        transition: 600ms;
+        background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
+        .main .categoriaGenero .generoGirl div h2 {
+          margin: 5px;
+          padding: 5px; }
     .main .categoriaGenero .generoBoys {
       background-image: url(../img/front-view-smiling-cute-kid-in-white-t-shirt-holding-skateboard-on-the-blue-floor.jpg);
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       flex-direction: column;
       width: 50%;
-      height: 250px;
+      min-height: 50vh;
       flex-wrap: wrap; }
-      .main .categoriaGenero .generoBoys h2 {
-        margin: 5px;
-        padding: 5px; }
+      .main .categoriaGenero .generoBoys div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+        border: 1px;
+        transition: 600ms;
+        background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
+        .main .categoriaGenero .generoBoys div h2 {
+          margin: 5px;
+          padding: 5px; }
+  .main h1 {
+    color: #2CAFA2;
+    font-size: 50px;
+    font-weight: bold; }
   .main h2 {
     margin: 5px;
     padding: 5px; }
   .main .boysContenedor {
     width: 100%;
+    min-height: 450px;
+    gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
     .main .boysContenedor .cardBoys {
+      width: 250px;
+      height: 400px;
       border: 1px solid #868686;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap; }
+      flex-direction: column; }
       .main .boysContenedor .cardBoys img {
-        margin-bottom: 5px;
-        width: 210px;
-        height: 290px; }
+        margin-bottom: 15px;
+        width: 100%;
+        min-height: 340px; }
+      .main .boysContenedor .cardBoys .botonP {
+        border-top: 20px;
+        height: 70px; }
   .main h2 {
     margin: 5px;
     padding: 5px; }
@@ -474,15 +506,19 @@ body {
 /**-------CONTACTO--------**/
 .contactoForm {
   width: 100%;
-  min-width: 350px;
+  min-width: 450px;
   height: 100%;
   padding: 20px;
-  margin: o auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap; }
+  .contactoForm h1 {
+    color: #2CAFA2;
+    font-size: 60px;
+    font-weight: bold; }
   .contactoForm h2 {
     margin-top: 10px;
     padding: 20px;
@@ -531,7 +567,8 @@ body {
           .contactoForm .form .containForm .datos .consulta h4 {
             padding: 10px; }
           .contactoForm .form .containForm .datos .consulta textarea {
-            outline: none; }
+            outline: none;
+            max-width: 100%; }
           .contactoForm .form .containForm .datos .consulta input {
             height: auto;
             resize: vertical;
@@ -658,8 +695,8 @@ body {
     .somos .locacionContain .mapa iframe {
       width: 80%; } }
 
-@media screen and (max-width: 560px) {
-  .principal .hero {
+@media screen and (max-width: 570px) {
+  .hero {
     text-align: center;
     width: 100%;
     min-width: 480px;
@@ -779,20 +816,28 @@ body {
     }
 }**/
 @media screen and (max-width: 350px) {
-  .destacadosContenedor .tarjetaProd {
-    border: 1px solid #868686;
-    width: 296px;
-    height: 390px;
-    margin: 1px;
-    text-align: center;
+  .destacadosContenedor {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .productosDestacados .destacadosContenedor .tarjetaProd img {
-    width: 292.5px;
-    height: 292.5px;
-    margin-bottom: 30px; }
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  /**.destacadosContenedor .tarjetaProd{
+        border: 1px solid rgb(134, 134, 134);
+        width: 296px;
+        height: 390px;
+        margin: 1px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .productosDestacados .destacadosContenedor .tarjetaProd img{
+        width: 292.5px;
+        height: 292.5px;
+        margin-bottom: 30px;
+    }**/
   /**.somos{
         width: 100%;
     
