@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@700&family=Fredoka+One&family=Poppins:wght@200&display=swap");
 .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div, .main .categoriaGenero .generoGirl div:hover, .main .categoriaGenero .generoBoys div:hover {
   width: 100%;
-  height: 40%;
+  height: 45%;
   border: 1px;
   transition: 600ms;
   background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
@@ -124,7 +124,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-basis: auto;
       border: 1px solid #868686; }
       .principal .categoriasProductos .categoria1 div img,
       .principal .categoriasProductos .categoria2 div img,
@@ -139,7 +138,7 @@ body {
         width: 100%;
         height: auto;
         text-align: center;
-        margin: 15px;
+        margin: 5px;
         display: flex;
         flex-direction: column;
         align-items: center; }
@@ -165,23 +164,28 @@ body {
       text-align: center; }
     .principal .productosDestacados .destacadosContenedor {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap; }
       .principal .productosDestacados .destacadosContenedor .tarjetaProd {
         border: 1px solid #868686;
-        width: 227px;
-        height: 300px;
-        margin: 20px;
+        width: 252px;
+        height: 400px;
+        margin: 10px;
         text-align: center;
         display: flex;
-        justify-content: start;
+        justify-content: space-around;
         align-items: center;
         flex-direction: column; }
-        .principal .productosDestacados .destacadosContenedor .tarjetaProd img {
-          width: 225px;
-          height: 225px;
-          margin-bottom: 25px; }
+        .principal .productosDestacados .destacadosContenedor .tarjetaProd .imgCard {
+          height: 70%; }
+          .principal .productosDestacados .destacadosContenedor .tarjetaProd .imgCard img {
+            width: 100%;
+            height: 225px;
+            margin-bottom: 25px; }
+        .principal .productosDestacados .destacadosContenedor .tarjetaProd div {
+          width: 100%;
+          height: 30%; }
   .principal .categoriaEdades {
     width: 100vw;
     margin: 20px; }
@@ -337,6 +341,7 @@ body {
 /**-----PRODUCTOS----**/
 .main {
   grid-area: principal;
+  row-gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,7 +368,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 30%;
+        height: 35%;
         border: 1px;
         transition: 600ms;
         background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
@@ -387,7 +392,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 30%;
+        height: 35%;
         border: 1px;
         transition: 600ms;
         background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
@@ -396,7 +401,7 @@ body {
           padding: 5px; }
   .main h1 {
     color: #2CAFA2;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold; }
   .main h2 {
     margin: 5px;
@@ -423,27 +428,34 @@ body {
         min-height: 340px; }
       .main .boysContenedor .cardBoys .botonP {
         border-top: 20px;
-        height: 70px; }
+        height: 40px; }
   .main h2 {
     margin: 5px;
     padding: 5px; }
   .main .girlsContenedor {
     width: 100%;
+    min-height: 450px;
+    gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
     .main .girlsContenedor .cardGirls {
+      width: 250px;
+      height: 400px;
       border: 1px solid #868686;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap; }
+      flex-direction: column; }
       .main .girlsContenedor .cardGirls img {
-        margin-bottom: 5px;
-        width: 210px;
-        height: 290px; }
+        margin-bottom: 15px;
+        width: 100%;
+        height: 340px;
+        min-height: 340px; }
+      .main .girlsContenedor .cardGirls .botonP {
+        border-top: 20px;
+        height: 40px; }
 
 /**---------QUIENES SOMOS--------**/
 .somos {
@@ -517,7 +529,7 @@ body {
   flex-wrap: wrap; }
   .contactoForm h1 {
     color: #2CAFA2;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold; }
   .contactoForm h2 {
     margin-top: 10px;

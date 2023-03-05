@@ -45,7 +45,7 @@
         .categoria4{
             text-align: center;
             @include flexcenter(flex, center, center);
-            flex-basis: auto;
+            
             border: 1px solid rgb(134, 134, 134);
             div{
                 img{
@@ -57,7 +57,7 @@
                 width: 100%;
                 height: auto;
                 text-align: center;
-                margin: 15px;
+                margin: 5px;
                 @include flexdir(flex, column, center);
                 a{
                     @extend %boton;                    
@@ -86,21 +86,27 @@
             text-align: center;
         }
         .destacadosContenedor{
-            @include flexcenter(flex, space-between, center);
+            @include flexcenter(flex, center, center);
             flex-wrap: wrap;
             .tarjetaProd{
                 border: 1px solid rgb(134, 134, 134);
-                width: 227px;
-                height: 300px;
-                margin: 20px;
+                width: 252px;
+                height: 400px;
+                margin: 10px;
                 text-align: center;
-                @include flex(flex, start, center, column);
-                img{
-                    width: 225px;
-                    height: 225px;
-                    margin-bottom: 25px;
+                @include flex(flex, space-around, center, column);
+                .imgCard{
+                    height: 70%;
+                    img{
+                        width: 100%;
+                        height: 225px;
+                        margin-bottom: 25px;
+                    }
                 }
+                
                 div{
+                    width: 100%;
+                    height: 30%;
                     a{
                         @extend %boton;
                         &:hover{
@@ -329,6 +335,7 @@
 /**-----PRODUCTOS----**/
 .main{
     grid-area: principal;
+    row-gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -350,7 +357,7 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
-                height: 30%;
+                height: 35%;
                 border: 1px;
                 transition: 600ms;
                 background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
@@ -382,7 +389,7 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
-                height: 30%;
+                height: 35%;
                 border: 1px;
                 transition: 600ms;
                 background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
@@ -405,7 +412,7 @@
     }
     h1{
         color: #2CAFA2;
-        font-size: 50px;
+        font-size: 70px;
         font-weight: bold;
     }
     h2{
@@ -433,7 +440,7 @@
             }
             .botonP{
                 border-top: 20px;
-                height: 70px;
+                height: 40px;
                 
                 a{
                     @extend %boton;
@@ -450,18 +457,25 @@
     }
     .girlsContenedor{
         width: 100%;
+        min-height: 450px;
+        gap: 10px;
         @include flexcenter(flex, center, center);
         flex-wrap: wrap;
         .cardGirls{
+            width: 250px;
+            height: 400px;
             border: 1px solid rgb(134, 134, 134);
-            @include flex(flex, space-around, center, column);
-            flex-wrap: wrap;
+            @include flex(flex, center, center, column);
+            
             img{
-                margin-bottom: 5px;
-                width: 210px;
-                height: 290px;
+                margin-bottom: 15px;
+                width: 100%;
+                height: 340px;
+                min-height: 340px;
             }
             .botonP{
+                border-top: 20px;
+                height: 40px;
                 a{
                     @extend %boton;
                     &:hover{
@@ -554,7 +568,7 @@
     flex-wrap: wrap;
     h1{
         color: #2CAFA2;
-        font-size: 60px;
+        font-size: 70px;
         font-weight: bold;
     }
     h2{
