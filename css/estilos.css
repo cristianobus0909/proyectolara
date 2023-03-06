@@ -6,7 +6,11 @@
   transition: 600ms;
   background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
 
-.principal .hero div a, .principal .categoriasProductos .categoria1 div a,
+.principal .productosDestacados .destacadosContenedor .tarjetaProd:hover {
+  transform: translateY(-3%);
+  box-shadow: 0 10px 15px -10px black; }
+
+.principal .hero .heroTitle a, .principal .categoriasProductos .categoria1 div a,
 .principal .categoriasProductos .categoria2 div a,
 .principal .categoriasProductos .categoria3 div a,
 .principal .categoriasProductos .categoria4 div a, .principal .productosDestacados .destacadosContenedor .tarjetaProd div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div a, .main .categoriaGenero .generoGirl div a, .main .categoriaGenero .generoBoys div a, .main .boysContenedor .cardBoys .botonP a, .main .girlsContenedor .cardGirls .botonP a {
@@ -17,7 +21,7 @@
   padding: 10px 15px;
   border-radius: 50px; }
 
-.principal .hero div a:hover {
+.principal .hero .heroTitle a:hover {
   background-color: white;
   color: dimgray; }
 
@@ -80,6 +84,7 @@ body {
 
 /**-----INDEX-----**/
 .principal {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,12 +104,19 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap; }
-    .principal .hero div h1 {
-      font-weight: 900px;
-      color: white;
-      margin-bottom: 20px;
-      font-size: 100px;
-      font-family: 'Dongle', sans-serif; }
+    .principal .hero .heroTitle {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      .principal .hero .heroTitle h1 {
+        font-weight: 900px;
+        color: white;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 100px;
+        font-family: 'Dongle', sans-serif; }
   .principal .categoriasProductos {
     display: flex;
     justify-content: center;
@@ -172,9 +184,10 @@ body {
         width: 252px;
         height: 400px;
         margin: 10px;
+        transition: all 400ms ease;
         text-align: center;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         flex-direction: column; }
         .principal .productosDestacados .destacadosContenedor .tarjetaProd .imgCard {
@@ -707,22 +720,32 @@ body {
     .somos .locacionContain .mapa iframe {
       width: 80%; } }
 
+@media screen and (max-width: 750px) {
+  .principal .hero {
+    min-width: 480px;
+    height: 70vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat; } }
+
 @media screen and (max-width: 570px) {
-  .hero {
+  .principal .hero {
     text-align: center;
     width: 100%;
     min-width: 480px;
     height: 70vh;
     background-image: url("../img/top-view-colourful-summer-lettering.jpg");
-    background-position-x: center;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+    .principal .hero .heroTitle h1 {
+      font-size: 60px; } }
 
 @media screen and (max-width: 490px) {
   .somos .somosContain {
@@ -749,88 +772,41 @@ body {
       .somos .locacionContain .mapa iframe {
         width: 80%; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
+  .navbar {
+    grid-area: menu;
+    min-width: 490px;
+    position: sticky;
+    top: 0;
+    max-width: 100%; }
   .principal .hero {
     text-align: center;
     width: 100%;
-    min-width: 490px;
-    height: 50vh;
     background-image: url("../img/top-view-colourful-summer-lettering.jpg");
-    background-position-x: center;
-    background-position-y: top;
+    background-position: start;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; } }
-
-/**---------QUIENES SOMOS--------**/
-/**.somos{
-    
-    display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-    .somosContain{
-        display: flex;
-        height: 100%;
-        flex-wrap: wrap;
-        div{
-            img{
-                width: 100%;
-                min-width: 480px;
-                padding: 15px 0px;
-            }
-        }
-        .sobreLara{
-            width: 500px;
-            min-width: 350px;
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-        }
-        
-    }
-    .locacionContain{
-        width: 100%;
-        min-width: 600px;
-        height: 50%;
-    
-        padding: 15px 0px;
-        display: flex;
-        background-color: #2CAFA2 ;
-        text-align: center;
-        
-        .descriptionMapa{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            color: white;
-            width: 100%auto;
-            max-width: 50vh;
-            min-width: 350px;
-        }
-        .mapa{
-            padding: 15px;
-            width: 100%;
-            max-width: 50vh;
-            iframe{
-                
-                min-width: 250px;
-            
-            }
-        }
-    }
-}**/
-@media screen and (max-width: 350px) {
+    flex-wrap: wrap; }
+    .principal .hero .heroTitle {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      .principal .hero .heroTitle h1 {
+        font-weight: 100;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: 'Dongle', sans-serif; }
   .destacadosContenedor {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
   /**.destacadosContenedor .tarjetaProd{

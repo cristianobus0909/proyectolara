@@ -24,7 +24,10 @@ black,
     transition: 600ms;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
 }
-
+%card{
+    transform: translateY(-3%);
+    box-shadow:  0 10px 15px -10px rgb(0, 0, 0 / 30%);
+}
 %boton{
     text-decoration: none;
     font-weight: bold;

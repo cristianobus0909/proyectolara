@@ -1,5 +1,6 @@
 /**-----INDEX-----**/
 .principal{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,11 +15,17 @@
         background-attachment: fixed;
         @include flex(flex, center, center, column);
         flex-wrap: wrap;
-        div{
+        .heroTitle{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
             h1{
                 font-weight: 900px;
                 color: white;
                 margin-bottom:  20px;
+                padding: 20px;
                 font-size: 100px;
                 font-family: 'Dongle', sans-serif;
             }
@@ -93,8 +100,12 @@
                 width: 252px;
                 height: 400px;
                 margin: 10px;
+                transition: all 400ms ease;
                 text-align: center;
-                @include flex(flex, space-around, center, column);
+                @include flex(flex, center, center, column);
+                &:hover{
+                    @extend %card;
+                }
                 .imgCard{
                     height: 70%;
                     img{
