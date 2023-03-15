@@ -6,9 +6,22 @@
   transition: 600ms;
   background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
 
-.principal .productosDestacados .destacadosContenedor .tarjetaProd:hover {
-  transform: translateY(-3%);
+.principal .categoriasProductos .categoria1:hover,
+.principal .categoriasProductos .categoria2:hover,
+.principal .categoriasProductos .categoria3:hover,
+.principal .categoriasProductos .categoria4:hover, .principal .productosDestacados .destacadosContenedor .tarjetaProd:hover {
+  transform: translateY(-1%);
   box-shadow: 0 10px 15px -10px black; }
+
+.principal .categoriaEdades .containEdades .ctgaEdades .ctga1, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 {
+  background-position-y: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #868686;
+  width: 400px;
+  height: 250px;
+  margin: 0px;
+  text-align: center; }
 
 .principal .hero .heroTitle a, .principal .categoriasProductos .categoria1 div a,
 .principal .categoriasProductos .categoria2 div a,
@@ -47,7 +60,8 @@ body {
 /**----------MENU----------**/
 .navbar {
   grid-area: menu;
-  min-width: 490px;
+  width: 100vw;
+  min-width: 500px;
   position: sticky;
   top: 0;
   max-width: 100%; }
@@ -64,9 +78,9 @@ body {
 /**----------HEADER----------**/
 .header, .headerProductos1, .headerSomos {
   text-align: center;
-  width: 100%;
-  max-width: 3000px;
-  min-width: 490px;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 500px;
   height: 1.5rem;
   background-color: black;
   color: white; }
@@ -84,7 +98,8 @@ body {
 
 /**-----INDEX-----**/
 .principal {
-  width: 100%;
+  width: 100vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,7 +107,7 @@ body {
   .principal .hero {
     text-align: center;
     width: 100%;
-    min-width: 480px;
+    min-width: 250px;
     height: 85vh;
     background-image: url("../img/top-view-colourful-summer-lettering.jpg");
     background-position: center;
@@ -115,7 +130,7 @@ body {
         color: white;
         margin-bottom: 20px;
         padding: 20px;
-        font-size: 100px;
+        font-size: 80px;
         font-family: 'Dongle', sans-serif; }
   .principal .categoriasProductos {
     display: flex;
@@ -136,6 +151,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: 300ms;
       border: 1px solid #868686; }
       .principal .categoriasProductos .categoria1 div img,
       .principal .categoriasProductos .categoria2 div img,
@@ -175,6 +191,7 @@ body {
       font-size: 20px;
       text-align: center; }
     .principal .productosDestacados .destacadosContenedor {
+      width: 100vw;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -198,10 +215,17 @@ body {
             margin-bottom: 25px; }
         .principal .productosDestacados .destacadosContenedor .tarjetaProd div {
           width: 100%;
-          height: 30%; }
+          height: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
   .principal .categoriaEdades {
     width: 100vw;
-    margin: 20px; }
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
     .principal .categoriaEdades .tituloCtgra {
       text-align: center; }
       .principal .categoriaEdades .tituloCtgra h2 {
@@ -210,6 +234,7 @@ body {
         font-size: 20px;
         text-align: center; }
     .principal .categoriaEdades .containEdades {
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
@@ -220,18 +245,10 @@ body {
         justify-content: center; }
         .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 {
           background-image: url("../img/beba4.jfif");
-          background-position-y: 0px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          border: 1px solid #868686;
-          width: 400px;
-          height: 250px;
-          margin: 0px;
           display: flex;
           justify-content: flex-end;
           align-items: center;
-          flex-direction: column;
-          text-align: center; }
+          flex-direction: column; }
           .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div:hover {
             width: 100%;
             height: 50%;
@@ -242,14 +259,6 @@ body {
             margin-bottom: 20px; }
         .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 {
           background-image: url("../img/loockjardinerobebe.jpg");
-          background-position-y: 0px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          border: 1px solid #868686;
-          width: 400px;
-          height: 250px;
-          margin: 0px;
-          text-align: center;
           display: flex;
           justify-content: flex-end;
           align-items: center;
@@ -264,14 +273,6 @@ body {
             margin-bottom: 20px; }
         .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 {
           background-image: url("../img/lookmininena.jpg");
-          background-position-y: 0px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          border: 1px solid #868686;
-          width: 400px;
-          height: 250px;
-          margin: 0px;
-          text-align: center;
           display: flex;
           justify-content: flex-end;
           align-items: center;
@@ -286,14 +287,6 @@ body {
             margin-bottom: 20px; }
         .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 {
           background-image: url("../img/front-view-smiling-cute-kid-in-white-t-shirt-holding-skateboard-on-the-blue-floor.jpg");
-          background-position-y: 0px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          border: 1px solid #868686;
-          width: 400px;
-          height: 250px;
-          margin: 0px;
-          text-align: center;
           display: flex;
           justify-content: flex-end;
           align-items: center;
@@ -308,14 +301,6 @@ body {
             margin-bottom: 20px; }
         .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 {
           background-image: url("../img/loockjuniornena.jpg");
-          background-position-y: 0px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          border: 1px solid #868686;
-          width: 400px;
-          height: 250px;
-          margin: 0px;
-          text-align: center;
           display: flex;
           justify-content: flex-end;
           align-items: center;
@@ -330,14 +315,6 @@ body {
             margin-bottom: 20px; }
         .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 {
           background-image: url("../img/loockjuniorvaron2.jpg");
-          background-position-y: 0px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          border: 1px solid #868686;
-          width: 400px;
-          height: 250px;
-          margin: 0px;
-          text-align: center;
           display: flex;
           justify-content: flex-end;
           align-items: center;
@@ -675,8 +652,8 @@ body {
 /**---------FOOTER--------**/
 .footer {
   grid-area: pie;
-  max-width: 3000px;
-  min-width: 480px;
+  max-width: 100vw;
+  min-width: 500px;
   background-color: #f09c60;
   display: flex;
   justify-content: space-around;
@@ -694,6 +671,9 @@ body {
         font-weight: bold;
         color: white;
         margin: 20px; }
+        .footer .footerMain ul li a:hover {
+          border-bottom: solid 2px white;
+          transform: translateY(-1); }
   .footer .containPie div {
     margin: 10px; }
   .footer .containPie .redes a img {
@@ -722,30 +702,114 @@ body {
 
 @media screen and (max-width: 750px) {
   .principal .hero {
+    max-width: 750px;
     min-width: 480px;
-    height: 70vh;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat; } }
+    height: 90vh;
+    background-position: center 50px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .principal .hero .heroTitle h1 {
+      font-weight: 900px;
+      color: white;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 70px;
+      font-family: 'Dongle', sans-serif; } }
 
-@media screen and (max-width: 570px) {
-  .principal .hero {
-    text-align: center;
-    width: 100%;
-    min-width: 480px;
-    height: 70vh;
-    background-image: url("../img/top-view-colourful-summer-lettering.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+@media screen and (max-width: 600px) {
+  .header {
+    min-width: 600px; }
+  .navbar {
+    min-width: 600px; }
+  .principal {
+    width: 100vw;
+    min-width: 600px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; }
-    .principal .hero .heroTitle h1 {
-      font-size: 60px; } }
+    flex-direction: column; }
+    .principal .hero {
+      background-position: center 50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-width: 600px;
+      min-width: 600px;
+      height: 70vh; }
+      .principal .hero .heroTitle h1 {
+        font-size: 60px; }
+    .principal .categoriasProductos {
+      width: 100vw;
+      min-width: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .principal .categoriasProductos .categoria1,
+      .principal .categoriasProductos .categoria2,
+      .principal .categoriasProductos .categoria3,
+      .principal .categoriasProductos .categoria4 {
+        min-width: 524px; }
+    .principal .productosDestacados {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .principal .productosDestacados .destacadosContenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .principal .productosDestacados .destacadosContenedor .tarjetaProd {
+          width: 378px;
+          height: 500px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; }
+          .principal .productosDestacados .destacadosContenedor .tarjetaProd .imgCard {
+            height: 80%; }
+            .principal .productosDestacados .destacadosContenedor .tarjetaProd .imgCard img {
+              width: 100%;
+              height: 375px;
+              margin-bottom: 25px; }
+          .principal .productosDestacados .destacadosContenedor .tarjetaProd div {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+    .principal .categoriaEdades .containEdades {
+      min-width: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .principal .categoriaEdades .containEdades .ctgaEdades {
+        min-width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .principal .categoriaEdades .containEdades .ctgaEdades .ctga1,
+        .principal .categoriaEdades .containEdades .ctgaEdades .ctga2,
+        .principal .categoriaEdades .containEdades .ctgaEdades .ctga3,
+        .principal .categoriaEdades .containEdades .ctgaEdades .ctga4,
+        .principal .categoriaEdades .containEdades .ctgaEdades .ctga5,
+        .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 {
+          width: 90%;
+          height: 365px; }
+          .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div,
+          .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div,
+          .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div,
+          .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div,
+          .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div,
+          .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; }
+  .footer {
+    min-width: 600px; } }
 
 @media screen and (max-width: 490px) {
   .somos .somosContain {
@@ -773,17 +837,10 @@ body {
         width: 80%; } }
 
 @media screen and (max-width: 380px) {
-  .navbar {
-    grid-area: menu;
-    min-width: 490px;
-    position: sticky;
-    top: 0;
-    max-width: 100%; }
   .principal .hero {
     text-align: center;
     width: 100%;
-    background-image: url("../img/top-view-colourful-summer-lettering.jpg");
-    background-position: start;
+    background-position: top 50px;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -799,21 +856,47 @@ body {
       align-items: center;
       justify-content: space-around; }
       .principal .hero .heroTitle h1 {
-        font-weight: 100;
+        font-weight: bold;
         color: white;
         margin-bottom: 20px;
-        font-size: 20px;
+        font-size: 60px;
         font-family: 'Dongle', sans-serif; }
   .destacadosContenedor {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     flex-wrap: wrap; } }
 
 @media screen and (max-width: 350px) {
-  .navbar {
-    grid-area: menu;
-    min-width: 500px;
-    position: sticky;
-    top: 0;
-    max-width: 100%; } }
+  .principal {
+    width: 100vw;
+    min-width: 600px; }
+    .principal .hero {
+      width: 100vw;
+      min-width: 600px;
+      background-position: top 50px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  .categoriasProductos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: px; }
+    .categoriasProductos .categoria1,
+    .categoriasProductos .categoria2,
+    .categoriasProductos .categoria3,
+    .categoriasProductos .categoria4 {
+      width: 480px; }
+      .categoriasProductos .categoria1 div img,
+      .categoriasProductos .categoria2 div img,
+      .categoriasProductos .categoria3 div img,
+      .categoriasProductos .categoria4 div img {
+        width: 222px;
+        height: 240px; }
+  .destacadosContenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; } }

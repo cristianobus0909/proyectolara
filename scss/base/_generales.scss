@@ -15,11 +15,13 @@ body{
     font-family: 'Poppins', sans-serif;
     color: dimgray;
     
+    
 }
 /**----------MENU----------**/
 .navbar{
     grid-area: menu;
-    min-width: 490px;
+    width: 100vw;
+    min-width: 500px;
     position: sticky;
     top: 0;
     max-width: 100%;

@@ -32,34 +32,117 @@
 @media screen and (max-width: 750px) {
     .principal{
         .hero{
+            max-width: 750px;
             min-width: 480px;
-            height: 70vh;
-            @include background(top, cover, no-repeat);
+            height: 90vh;
+            @include background(center 50px, contain, no-repeat);
+            .heroTitle{
+
+                h1{
+                    font-weight: 900px;
+                    color: white;
+                    margin-bottom:  20px;
+                    padding: 10px;
+                    font-size: 70px;
+                    font-family: 'Dongle', sans-serif;
+                }
+            }
         }
     }
     
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
+    .header{
+        min-width: 600px;
+    }
+    .navbar{
+        min-width: 600px;
+    }
     .principal{    
+        width: 100vw;
+        min-width: 600px;
+        @include flex(flex, center, center, column);
         .hero{
-        text-align: center;
-        width: 100%;
-        min-width: 480px;
-        height: 70vh;
-        background-image: url("../img/top-view-colourful-summer-lettering.jpg") ;
-        @include background(center, cover, no-repeat);
-        background-attachment: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+            @include background(center 50px, contain, no-repeat);
+            max-width: 600px;
+            min-width: 600px;
+            height: 70vh;
             .heroTitle{
                 h1{
                     font-size: 60px;
                 }
             }
         }
+        .categoriasProductos{
+            width: 100vw;
+            min-width: 600px;
+            @include flex(flex, center, center, column);
+
+            .categoria1,
+            .categoria2,
+            .categoria3,
+            .categoria4{
+                min-width: 524px;
+            }
+        }
+        .productosDestacados{
+            @include flex(flex, center, center, column);
+            .destacadosContenedor{
+                @include flex(flex, center, center, column);
+
+                .tarjetaProd{
+                    width: 378px;
+                    height: 500px;
+                    @include flex(flex, center, center, column);
+                    
+                    
+                    .imgCard{
+                        height: 80%;
+                        img{
+                            width: 100%;
+                            height: 375px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                    
+                    div{
+                        width: 100%;
+                        height: 20%;
+                        @include flexcenter(flex, center, center);
+                        
+                    }
+                }
+                
+            }
+            
+        }
+        .categoriaEdades{
+            .containEdades{
+                min-width: 600px;
+                @include flex(flex, center, center, column);
+                .ctgaEdades{
+                    min-width: 600px;
+                    @include flex(flex, center, center, column);
+                    .ctga1,
+                    .ctga2,
+                    .ctga3,
+                    .ctga4,
+                    .ctga5,
+                    .ctga6{
+                        width: 90%;
+                        height: 365px;
+                        div{
+                            @include flex(flex, center, center, column)
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer{
+    min-width: 600px;
     }
 }
 @media screen and (max-width: 490px) {
@@ -98,28 +181,17 @@
         }
     }
 }
-@media screen and (max-width: 480px) {
-    
-}
 
 
 
 
 @media screen and (max-width: 380px) {
-    .navbar{
-        grid-area: menu;
-        min-width: 490px;
-        position: sticky;
-        top: 0;
-        max-width: 100%;
-    }
+
     .principal{
         .hero{
             text-align: center;
             width: 100%;
-            
-            background-image: url("../img/top-view-colourful-summer-lettering.jpg") ;
-            @include background(start, contain, no-repeat);
+            @include background(top 50px, contain, no-repeat);
             background-attachment: fixed;
             @include flex(flex, center, center, column);
             flex-wrap: wrap;
@@ -130,10 +202,10 @@
                 align-items: center;
                 justify-content: space-around;
                 h1{
-                    font-weight: 100;
+                    font-weight: bold;
                     color: white;
                     margin-bottom:  20px;
-                    font-size: 20px;
+                    font-size: 60px;
                     font-family: 'Dongle', sans-serif;
                 }
 
@@ -142,19 +214,47 @@
         }
     }
     .destacadosContenedor{
-        @include flexcenter(flex, center, center);
+        @include flex(flex, center, center, column);
         flex-wrap: wrap;
     }
 
 }
+
+
 @media screen and (max-width: 350px) {
-    .navbar{
-        grid-area: menu;
-        min-width: 500px;
-        position: sticky;
-        top: 0;
-        max-width: 100%;
+    .principal{
+        width: 100vw;
+        min-width: 600px;
+        .hero{
+            width: 100vw;
+            min-width: 600px;
+            
+            @include background(top 50px, contain, no-repeat);
+        }
     }
+    
+    .categoriasProductos{
+        @include flex(flex, center, center, column);
+        min-width: px;
+        .categoria1,
+        .categoria2,
+        .categoria3,
+        .categoria4{
+            width: 480px;
+            div{
+                img{
+                    width: 222px;
+                    height: 240px;
+                }
+            }
+        }
+    }    
+    .destacadosContenedor{
+        @include flex(flex, center, center, column);
+    }
+
+
+
 }
 
 

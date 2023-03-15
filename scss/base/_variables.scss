@@ -24,9 +24,19 @@ black,
     transition: 600ms;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
 }
-%card{
-    transform: translateY(-3%);
+%cardeff{
+    transform: translateY(-1%);
     box-shadow:  0 10px 15px -10px rgb(0, 0, 0 / 30%);
+}
+%cardcat{
+    background-position-y: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(134, 134, 134);
+    width: 400px;
+    height: 250px;
+    margin: 0px;
+    text-align: center;
 }
 %boton{
     text-decoration: none;
