@@ -20,11 +20,12 @@ body{
 /**----------MENU----------**/
 .navbar{
     grid-area: menu;
-    width: 100vw;
+    width: 100%;
+    max-width: 3000px;
     min-width: 500px;
     position: sticky;
     top: 0;
-    max-width: 100%;
+    z-index: 1;
 }
 /**-----FIXED------**/
 

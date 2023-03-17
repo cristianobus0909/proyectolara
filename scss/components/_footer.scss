@@ -5,13 +5,19 @@
     max-width: 100vw;
     min-width: 500px;
     background-color: rgb(240, 156, 96);
-    @include flex(flex, space-around, center, column);
+    @include flex(flex, center, center, column);
     .footerMain{
+        width: 100%;
+        @include flex(flex, center, center, column);
         ul{
-            margin-top: 15px;
+            
             @include flexcenter(flex, space-between, center);
             li{
                 list-style: none;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 a{
                     text-decoration: none;
                     font-weight: bold;
@@ -27,14 +33,31 @@
         }
     }
     .containPie{
+        width: 100%;
+        @include flex(flex, space-around, center, column);
         div{
+            width: 350px;
+            @include flexcenter(flex, center, center);
+            .suscribe{
+                width: 60%;
+                height: 60%;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(134, 134, 134);
+            }
             margin: 10px;
+            .suscribeBoton{
+                @extend %boton;
+            }
         }
         .redes{
+            @include flexcenter(flex, space-between, center);
             a{
+                margin: 15px;
                 img{
-                    margin: 10px;
-                    width: 30px;
+                    margin: 0px 10px;
+                    width: 40px;
                     height: auto;
                 }
             }

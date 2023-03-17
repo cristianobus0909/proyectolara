@@ -16,6 +16,22 @@ black,
 ;
 
 //*--EXTEND--*//
+%header{
+    text-align: center;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 500px;
+    height: 1.5rem;
+    background-color: black;
+    color: white;
+    p{
+
+        span{
+                font-weight: bold;
+        }
+    }
+}
+
 %hidecard{
     
     width: 100%;
@@ -44,7 +60,7 @@ black,
     color:white;
     background-color: dimgray;
     padding: 10px 15px;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 %hoverhero{
     background-color: white; 

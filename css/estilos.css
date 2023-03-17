@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@700&family=Fredoka+One&family=Poppins:wght@200&display=swap");
-.principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div, .main .categoriaGenero .generoGirl div:hover, .main .categoriaGenero .generoBoys div:hover {
+.header, .headerSomos, .gridProductos .headerProductos1 {
+  text-align: center;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 500px;
+  height: 1.5rem;
+  background-color: black;
+  color: white; }
+  .header p span, .headerSomos p span, .gridProductos .headerProductos1 p span {
+    font-weight: bold; }
+
+.principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div, .gridProductos .main .categoriaGenero .generoGirl div:hover, .gridProductos .main .categoriaGenero .generoBoys div:hover {
   width: 100%;
   height: 45%;
   border: 1px;
@@ -9,7 +20,7 @@
 .principal .categoriasProductos .categoria1:hover,
 .principal .categoriasProductos .categoria2:hover,
 .principal .categoriasProductos .categoria3:hover,
-.principal .categoriasProductos .categoria4:hover, .principal .productosDestacados .destacadosContenedor .tarjetaProd:hover {
+.principal .categoriasProductos .categoria4:hover, .principal .productosDestacados .destacadosContenedor .tarjetaProd:hover, .gridProductos .main .boysContenedor .cardBoys:hover, .gridProductos .main .girlsContenedor .cardGirls:hover {
   transform: translateY(-1%);
   box-shadow: 0 10px 15px -10px black; }
 
@@ -26,13 +37,13 @@
 .principal .hero .heroTitle a, .principal .categoriasProductos .categoria1 div a,
 .principal .categoriasProductos .categoria2 div a,
 .principal .categoriasProductos .categoria3 div a,
-.principal .categoriasProductos .categoria4 div a, .principal .productosDestacados .destacadosContenedor .tarjetaProd div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div a, .main .categoriaGenero .generoGirl div a, .main .categoriaGenero .generoBoys div a, .main .boysContenedor .cardBoys .botonP a, .main .girlsContenedor .cardGirls .botonP a {
+.principal .categoriasProductos .categoria4 div a, .principal .productosDestacados .destacadosContenedor .tarjetaProd div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div a, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div a, .gridProductos .main .categoriaGenero .generoGirl div a, .gridProductos .main .categoriaGenero .generoBoys div a, .gridProductos .main .boysContenedor .cardBoys .botonP a, .gridProductos .main .girlsContenedor .cardGirls .botonP a, .footer .containPie div .suscribeBoton {
   text-decoration: none;
   font-weight: bold;
   color: white;
   background-color: dimgray;
   padding: 10px 15px;
-  border-radius: 50px; }
+  border-radius: 30px; }
 
 .principal .hero .heroTitle a:hover {
   background-color: white;
@@ -41,7 +52,7 @@
 .principal .categoriasProductos .categoria1 div a:hover,
 .principal .categoriasProductos .categoria2 div a:hover,
 .principal .categoriasProductos .categoria3 div a:hover,
-.principal .categoriasProductos .categoria4 div a:hover, .principal .productosDestacados .destacadosContenedor .tarjetaProd div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div a:hover, .main .categoriaGenero .generoGirl div a:hover, .main .categoriaGenero .generoBoys div a:hover, .main .boysContenedor .cardBoys .botonP a:hover, .main .girlsContenedor .cardGirls .botonP a:hover {
+.principal .categoriasProductos .categoria4 div a:hover, .principal .productosDestacados .destacadosContenedor .tarjetaProd div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga1 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga2 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga3 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga4 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga5 div a:hover, .principal .categoriaEdades .containEdades .ctgaEdades .ctga6 div a:hover, .gridProductos .main .categoriaGenero .generoGirl div a:hover, .gridProductos .main .categoriaGenero .generoBoys div a:hover, .gridProductos .main .boysContenedor .cardBoys .botonP a:hover, .gridProductos .main .girlsContenedor .cardGirls .botonP a:hover {
   background-color: #E66165;
   color: white; }
 
@@ -60,11 +71,12 @@ body {
 /**----------MENU----------**/
 .navbar {
   grid-area: menu;
-  width: 100vw;
+  width: 100%;
+  max-width: 3000px;
   min-width: 500px;
   position: sticky;
   top: 0;
-  max-width: 100%; }
+  z-index: 1; }
 
 /**-----FIXED------**/
 .fixed {
@@ -76,25 +88,17 @@ body {
     height: 50px; }
 
 /**----------HEADER----------**/
-.header, .headerProductos1, .headerSomos {
-  text-align: center;
-  width: 100vw;
-  max-width: 100vw;
-  min-width: 500px;
-  height: 1.5rem;
-  background-color: black;
-  color: white; }
-  .header p span, .headerProductos1 p span, .headerSomos p span {
-    font-weight: bold; }
-
 /**-----PRODUCTOS----**/
 .gridProductos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 4fr auto 6fr;
+  grid-template-rows: 0.5fr 4fr auto 6fr;
   grid-template-areas: "header header" "menu menu" "principal principal" "pie pie"; }
   .gridProductos .headerProductos1 {
-    grid-area: header; }
+    grid-area: header;
+    width: 100vw;
+    max-width: 3000px;
+    min-width: 600px; }
 
 /**-----INDEX-----**/
 .principal {
@@ -329,123 +333,128 @@ body {
             margin-bottom: 20px; }
 
 /**-----PRODUCTOS----**/
-.main {
-  grid-area: principal;
-  row-gap: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .main .categoriaGenero {
-    width: 100%;
-    max-width: 3000px;
+.gridProductos {
+  width: 100%;
+  max-width: 3000px; }
+  .gridProductos .main {
+    grid-area: principal;
+    row-gap: 10px;
     display: flex;
-    justify-content: space-around; }
-    .main .categoriaGenero .generoGirl {
-      background-image: url(../img/pretty-girl-with-long-hair-hugging-inflatable-swimming-circle.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-direction: column;
-      width: 50%;
-      min-height: 50vh;
-      flex-wrap: wrap; }
-      .main .categoriaGenero .generoGirl div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 35%;
-        border: 1px;
-        transition: 600ms;
-        background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
-        .main .categoriaGenero .generoGirl div h2 {
-          margin: 5px;
-          padding: 5px; }
-    .main .categoriaGenero .generoBoys {
-      background-image: url(../img/front-view-smiling-cute-kid-in-white-t-shirt-holding-skateboard-on-the-blue-floor.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-direction: column;
-      width: 50%;
-      min-height: 50vh;
-      flex-wrap: wrap; }
-      .main .categoriaGenero .generoBoys div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 35%;
-        border: 1px;
-        transition: 600ms;
-        background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
-        .main .categoriaGenero .generoBoys div h2 {
-          margin: 5px;
-          padding: 5px; }
-  .main h1 {
-    color: #2CAFA2;
-    font-size: 70px;
-    font-weight: bold; }
-  .main h2 {
-    margin: 5px;
-    padding: 5px; }
-  .main .boysContenedor {
-    width: 100%;
-    min-height: 450px;
-    gap: 10px;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap; }
-    .main .boysContenedor .cardBoys {
-      width: 250px;
-      height: 400px;
-      border: 1px solid #868686;
+    justify-content: center; }
+    .gridProductos .main .categoriaGenero {
+      width: 100%;
+      max-width: 3000px;
+      display: flex;
+      justify-content: space-around; }
+      .gridProductos .main .categoriaGenero .generoGirl {
+        background-image: url(../img/pretty-girl-with-long-hair-hugging-inflatable-swimming-circle.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        min-height: 50vh;
+        flex-wrap: wrap; }
+        .gridProductos .main .categoriaGenero .generoGirl div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          height: 35%;
+          border: 1px;
+          transition: 600ms;
+          background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
+          .gridProductos .main .categoriaGenero .generoGirl div h2 {
+            margin: 5px;
+            padding: 5px; }
+      .gridProductos .main .categoriaGenero .generoBoys {
+        background-image: url(../img/front-view-smiling-cute-kid-in-white-t-shirt-holding-skateboard-on-the-blue-floor.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        min-height: 50vh;
+        flex-wrap: wrap; }
+        .gridProductos .main .categoriaGenero .generoBoys div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          height: 35%;
+          border: 1px;
+          transition: 600ms;
+          background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); }
+          .gridProductos .main .categoriaGenero .generoBoys div h2 {
+            margin: 5px;
+            padding: 5px; }
+    .gridProductos .main h1 {
+      color: #2CAFA2;
+      font-size: 70px;
+      font-weight: bold; }
+    .gridProductos .main h2 {
+      margin: 5px;
+      padding: 5px; }
+    .gridProductos .main .boysContenedor {
+      width: 100%;
+      min-height: 450px;
+      gap: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column; }
-      .main .boysContenedor .cardBoys img {
-        margin-bottom: 15px;
-        width: 100%;
-        min-height: 340px; }
-      .main .boysContenedor .cardBoys .botonP {
-        border-top: 20px;
-        height: 40px; }
-  .main h2 {
-    margin: 5px;
-    padding: 5px; }
-  .main .girlsContenedor {
-    width: 100%;
-    min-height: 450px;
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .main .girlsContenedor .cardGirls {
-      width: 250px;
-      height: 400px;
-      border: 1px solid #868686;
+      flex-wrap: wrap; }
+      .gridProductos .main .boysContenedor .cardBoys {
+        width: 250px;
+        height: 400px;
+        border: 1px solid #868686;
+        transition: 600ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .gridProductos .main .boysContenedor .cardBoys img {
+          margin-bottom: 15px;
+          width: 100%;
+          min-height: 340px; }
+        .gridProductos .main .boysContenedor .cardBoys .botonP {
+          border-top: 20px;
+          height: 40px; }
+    .gridProductos .main h2 {
+      margin: 5px;
+      padding: 5px; }
+    .gridProductos .main .girlsContenedor {
+      width: 100%;
+      min-height: 450px;
+      gap: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column; }
-      .main .girlsContenedor .cardGirls img {
-        margin-bottom: 15px;
-        width: 100%;
-        height: 340px;
-        min-height: 340px; }
-      .main .girlsContenedor .cardGirls .botonP {
-        border-top: 20px;
-        height: 40px; }
+      flex-wrap: wrap; }
+      .gridProductos .main .girlsContenedor .cardGirls {
+        width: 250px;
+        height: 400px;
+        border: 1px solid #868686;
+        transition: 600ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .gridProductos .main .girlsContenedor .cardGirls img {
+          margin-bottom: 15px;
+          width: 100%;
+          height: 340px;
+          min-height: 340px; }
+        .gridProductos .main .girlsContenedor .cardGirls .botonP {
+          border-top: 20px;
+          height: 40px; }
 
 /**---------QUIENES SOMOS--------**/
 .somos {
@@ -621,6 +630,7 @@ body {
     align-items: center;
     flex-wrap: wrap; }
     .promos .planesFin .finCard {
+      padding: 10px;
       width: 220px;
       height: 300px;
       min-width: 250px;
@@ -656,37 +666,69 @@ body {
   min-width: 500px;
   background-color: #f09c60;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column; }
-  .footer .footerMain ul {
-    margin-top: 15px;
+  .footer .footerMain {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .footer .footerMain ul li {
-      list-style: none; }
-      .footer .footerMain ul li a {
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-        margin: 20px; }
-        .footer .footerMain ul li a:hover {
-          border-bottom: solid 2px white;
-          transform: translateY(-1); }
-  .footer .containPie div {
-    margin: 10px; }
-  .footer .containPie .redes a img {
-    margin: 10px;
-    width: 30px;
-    height: auto; }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .footer .footerMain ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .footer .footerMain ul li {
+        list-style: none;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .footer .footerMain ul li a {
+          text-decoration: none;
+          font-weight: bold;
+          color: white;
+          margin: 20px; }
+          .footer .footerMain ul li a:hover {
+            border-bottom: solid 2px white;
+            transform: translateY(-1); }
+  .footer .containPie {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; }
+    .footer .containPie div {
+      width: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px; }
+      .footer .containPie div .suscribe {
+        width: 60%;
+        height: 60%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #868686; }
+    .footer .containPie .redes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .footer .containPie .redes a {
+        margin: 15px; }
+        .footer .containPie .redes a img {
+          margin: 0px 10px;
+          width: 40px;
+          height: auto; }
 
 @media screen and (max-width: 960px) {
   .somos .somosContain {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    flex-direction: column; }
     .somos .somosContain div {
       width: 90%; }
     .somos .somosContain .sobreLara {
@@ -722,7 +764,7 @@ body {
   .navbar {
     min-width: 600px; }
   .principal {
-    width: 100vw;
+    width: 100%;
     min-width: 600px;
     display: flex;
     justify-content: center;
@@ -808,22 +850,61 @@ body {
             justify-content: center;
             align-items: center;
             flex-direction: column; }
+  .gridProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr auto 6fr;
+    grid-template-areas: "header" "menu" "principal" "pie"; }
+    .gridProductos .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%; }
+      .gridProductos .main .categoriaGenero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%; }
+        .gridProductos .main .categoriaGenero .generoGirl {
+          width: 100%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat; }
+        .gridProductos .main .categoriaGenero .generoBoys {
+          width: 100%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat; }
+  .promos {
+    width: 100%;
+    max-width: 3000px;
+    min-width: 600px; }
+    .promos h1 {
+      font-size: 4em; }
+    .promos .planesFin {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .footer {
     min-width: 600px; } }
 
 @media screen and (max-width: 490px) {
+  /**-----QUIENES SOMOS----**/
   .somos .somosContain {
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     .somos .somosContain div {
       width: 90%; }
     .somos .somosContain .sobreLara {
       width: 90%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      flex-direction: column; }
   .somos .locacionContain {
     min-width: 350px;
     flex-direction: column; }
@@ -834,7 +915,35 @@ body {
       justify-content: center;
       align-items: center; }
       .somos .locacionContain .mapa iframe {
-        width: 80%; } }
+        width: 80%; }
+  /**-----PROMOS Y CUOTAS----**/
+  .promos {
+    width: 100%;
+    max-width: 3000px;
+    min-width: 600px; }
+    .promos h1 {
+      font-size: 4em; }
+    .promos .planesFin {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .promos .planesFin .finCard {
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        flex-direction: column;
+        width: 440px;
+        height: 600px; }
+        .promos .planesFin .finCard img {
+          width: 80%; }
+        .promos .planesFin .finCard h3 {
+          font-size: 3em;
+          height: 10%; }
+        .promos .planesFin .finCard p {
+          font-size: 30px;
+          height: 10%; } }
 
 @media screen and (max-width: 380px) {
   .principal .hero {
@@ -852,9 +961,9 @@ body {
     .principal .hero .heroTitle {
       width: 100%;
       display: flex;
-      flex-direction: column;
+      justify-content: space-around;
       align-items: center;
-      justify-content: space-around; }
+      flex-direction: column; }
       .principal .hero .heroTitle h1 {
         font-weight: bold;
         color: white;

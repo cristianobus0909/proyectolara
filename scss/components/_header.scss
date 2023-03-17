@@ -1,24 +1,13 @@
 /**----------HEADER----------**/
-.header, .headerProductos1, .headerSomos{
-    text-align: center;
-    width: 100vw;
-    max-width: 100vw;
-    min-width: 500px;
-    height: 1.5rem;
-    background-color: black;
-    color: white;
-    p{
-
-        span{
-                font-weight: bold;
-        }
-    }
+.header, .headerSomos{
+    @extend %header;
 }
+
 /**-----PRODUCTOS----**/
 .gridProductos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr auto 6fr ;
+    grid-template-rows: 0.5fr 4fr auto 6fr ;
     grid-template-areas: 
     "header header"
     "menu menu"
@@ -27,5 +16,10 @@
     ;
     .headerProductos1{
         grid-area: header;
+        width: 100vw;
+        max-width: 3000px;
+        min-width: 600px;
+        @extend %header;
+        
     }
 }

@@ -2,16 +2,12 @@
 @media screen and (max-width: 960px){
     .somos{
         .somosContain{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include flex(flex, center, center, column);
             div{
                 width: 90%;
             }
             .sobreLara{
                 width: 90%;
-                
             }
         }
         .locacionContain{
@@ -19,9 +15,7 @@
                 width: 100%;
             }
             .mapa{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flexcenter(flex, center, center);
                 iframe{
                     width: 80%;
                 }
@@ -37,7 +31,6 @@
             height: 90vh;
             @include background(center 50px, contain, no-repeat);
             .heroTitle{
-
                 h1{
                     font-weight: 900px;
                     color: white;
@@ -59,7 +52,7 @@
         min-width: 600px;
     }
     .principal{    
-        width: 100vw;
+        width: 100%;
         min-width: 600px;
         @include flex(flex, center, center, column);
         .hero{
@@ -77,7 +70,6 @@
             width: 100vw;
             min-width: 600px;
             @include flex(flex, center, center, column);
-
             .categoria1,
             .categoria2,
             .categoria3,
@@ -89,13 +81,10 @@
             @include flex(flex, center, center, column);
             .destacadosContenedor{
                 @include flex(flex, center, center, column);
-
                 .tarjetaProd{
                     width: 378px;
                     height: 500px;
                     @include flex(flex, center, center, column);
-                    
-                    
                     .imgCard{
                         height: 80%;
                         img{
@@ -104,12 +93,10 @@
                             margin-bottom: 25px;
                         }
                     }
-                    
                     div{
                         width: 100%;
                         height: 20%;
                         @include flexcenter(flex, center, center);
-                        
                     }
                 }
                 
@@ -134,34 +121,71 @@
                         div{
                             @include flex(flex, center, center, column)
                         }
-                        
                     }
                 }
             }
         }
     }
-    
+
+    .gridProductos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr auto 6fr ;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "principal"
+        "pie"
+        ;
+        
+        .main{
+            @include flex(flex, center, center, column);
+            width: 100%;
+            .categoriaGenero{
+                @include flex(flex, center, center, column);
+                width: 100%;
+                .generoGirl{
+                    width: 100%;
+                    @include background(center, cover, no-repeat);
+                    
+                    
+                }
+                .generoBoys{
+                    width: 100%;
+                    @include background(center, cover, no-repeat);
+                }
+            }
+        }
+    }
+
+    .promos{
+        width: 100%;
+        max-width: 3000px;
+        min-width: 600px;
+        h1{
+            font-size: 4em;
+        }
+        .planesFin{
+            width: 100%;
+            @include flexcenter(flex, center, center);
+        }
+    }
     .footer{
     min-width: 600px;
     }
+
 }
 @media screen and (max-width: 490px) {
+/**-----QUIENES SOMOS----**/
     .somos{
         .somosContain{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexcenter(flex, center, center);
             div{
                 width: 90%;
-                
             }
             .sobreLara{
                 width: 90%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                
+                @include flex(flex, center, center, column);
             }
         }
         .locacionContain{
@@ -171,11 +195,38 @@
                 width: 100%;
             }
             .mapa{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flexcenter(flex, center, center);
                 iframe{
                     width: 80%;
+                }
+            }
+        }
+    }
+    /**-----PROMOS Y CUOTAS----**/
+    .promos{
+        width: 100%;
+        max-width: 3000px;
+        min-width: 600px;
+        h1{
+            font-size: 4em;
+        }
+        .planesFin{
+            width: 100%;
+            @include flex(flex, center, center, column);
+            .finCard{
+                @include flex(flex, center, space-around, column);
+                width: 440px;
+                height: 600px;
+                img{
+                    width: 80%;
+                }
+                h3{
+                    font-size: 3em;
+                    height: 10%;
+                }
+                p{
+                    font-size: 30px;
+                    height: 10%;
                 }
             }
         }
@@ -197,10 +248,7 @@
             flex-wrap: wrap;
             .heroTitle{
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-around;
+                @include flex(flex, space-around, center, column);
                 h1{
                     font-weight: bold;
                     color: white;
@@ -208,8 +256,6 @@
                     font-size: 60px;
                     font-family: 'Dongle', sans-serif;
                 }
-
-            
             }
         }
     }
@@ -217,9 +263,7 @@
         @include flex(flex, center, center, column);
         flex-wrap: wrap;
     }
-
 }
-
 
 @media screen and (max-width: 350px) {
     .principal{
